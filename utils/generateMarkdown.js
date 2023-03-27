@@ -20,6 +20,12 @@ ${data.description}
 # License
 ${getLicense(data.license)}
 
+# Github
+${data.github}
+
+# Email
+${data.email}
+
 
 
 

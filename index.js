@@ -20,7 +20,14 @@ inquirer.prompt([
         choices: ["MIT", "Apache", "None"]
     },
     {
-        
+        type: "input",
+        name: "github",
+        message: "What is your github username?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email?"
     }
 ]).then(answer => {
     fs.writeFile("README.md", generateMarkdown(answer), function(err) {
